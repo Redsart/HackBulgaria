@@ -18,53 +18,78 @@ namespace Word_Game
             {'m','v','v','n'},
             {'q','r','i','t'}};
             int counter = 0;
+            char[] word = new char[] { 'i', 'v', 'a', 'n' };
 
-            //check rows
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
-                for (int col = 0; col < matrix.GetLength(1)-1; col++)
+                for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    if (matrix[row, col] == 'i' && matrix[row, col + 1] == 'v' && matrix[row, col + 2] == 'a' && matrix[row, col + 3] == 'n')
+                    if (matrix[row, col] == word[0]) //searching if char == first char of word
                     {
-                        counter++;
+                        //searching for a word horizontaly
+                        if (col + 1 < matrix.GetLength(1) && matrix[row, col + 1] == word[1]) //check if coordinates exists and search a next letter
+                        {
+                            if (col + 2 < matrix.GetLength(1) && matrix[row, col + 2] == word[2]) //check if coordinates exists and search a next letter
+                            {
+                                if (col + 3 < matrix.GetLength(1) && matrix[row, col + 3] == word[3]) //check if coordinates exists and search a next letter
+                                {
+                                    counter++;
+                                }
+                            }
+                        }
+
+                        //searching for a word verticaly from up to down
+                        if (row+1<matrix.GetLength(0) && matrix[row+1,col]==word[1]) //check if coordinates exists and search a next letter
+                        {
+                            if (row + 2 < matrix.GetLength(0) && matrix[row + 2, col] == word[2]) //check if coordinates exists and search a next letter
+                            {
+                                if (row + 3 < matrix.GetLength(0) && matrix[row + 3, col] == word[3]) //check if coordinates exists and search a next letter
+                                {
+                                    counter++;
+                                }
+                            }
+                        }
+
+                        //searching for a word verticaly from down to up
+                        if (row - 1 > 0 && matrix[row - 1, col] == word[1]) //check if coordinates exists and search a next letter
+                        {
+                            if (row - 2 > 0 && matrix[row - 2, col] == word[2]) //check if coordinates exists and search a next letter
+                            {
+                                if (row - 3 > 0 && matrix[row - 3, col] == word[3]) //check if coordinates exists and search a next letter
+                                {
+                                    counter++;
+                                }
+                            }
+                        }
+
+                        //searching from left to right diagonal
+                        if (row + 1 < matrix.GetLength(0) && col + 1 < matrix.GetLength(1) && matrix[row + 1, col + 1] == word[1]) //check if coordinates exists and search a next letter
+                        {
+                            if (row + 2 < matrix.GetLength(0) && col + 2 < matrix.GetLength(1) && matrix[row + 2, col + 2] == word[2]) //check if coordinates exists and search a next letter
+                            {
+                                if (row + 3 < matrix.GetLength(0) && col + 3 < matrix.GetLength(1) && matrix[row + 3, col + 3] == word[3]) //check if coordinates exists and search a next letter
+                                {
+                                    counter++;
+                                }
+                            }
+                        }
+
+                        //searching from right to left diagonal
+                        if (row - 1 > 0 && col - 1 > 0 && matrix[row - 1, col - 1] == word[1]) //check if coordinates exists and search a next letter
+                        {
+                            if (row - 2 > 0 && col - 2 > 0 && matrix[row - 2, col - 2] == word[2]) //check if coordinates exists and search a next letter
+                            {
+                                if (row - 3 > 0 && col - 3 > 0 && matrix[row - 3, col - 3] == word[3]) //check if coordinates exists and search a next letter
+                                {
+                                    counter++;
+                                }
+                            }
+                        }
                     }
                 }
-            }
 
-            //check colls
-            for (int col = 0; col < matrix.GetLength(1); col++)
-            {
-                for (int row = 0; row < matrix.GetLength(0) - 1; row++)
-                {
-                    if (matrix[row, col] == 'i' && matrix[row + 1, col] == 'v' && matrix[row + 2, col] == 'a' && matrix[row + 3, col] == 'n')
-                    {
-
-                        counter++;
-                    }
-                    else if (row >= 3 && matrix[row,col]=='i' && matrix[row - 1, col] == 'v' && matrix[row - 2, col] == 'a' && matrix[row - 3, col] == 'n')
-                    {
-                        counter++;
-                    }
-                }
             }
-
-            //check from left to right
-            for (int row = 0, col = 0; row < matrix.GetLength(0) - 1 && col < matrix.GetLength(1) - 1; row++, col++)
-            {
-                if (matrix[row, col] == 'i' && matrix[row + 1, col + 1] == 'v' && matrix[row + 2, col + 2] == 'a' && matrix[row + 3, col + 3] == 'n')
-                {
-                    counter++;
-                }
-            }
-
-            //check from right to left
-            for (int row = 0, col = 0; row < matrix.GetLength(0) - 1 && col > 0; row++, col--)
-            {
-                if (matrix[row, col] == 'i' && matrix[row + 1, col + 1] == 'v' && matrix[row + 2, col + 2] == 'a' && matrix[row + 3, col + 3] == 'n')
-                {
-                    counter++;
-                }  
-            }
+            
 
             Console.WriteLine("Result: {0}",counter);
         }

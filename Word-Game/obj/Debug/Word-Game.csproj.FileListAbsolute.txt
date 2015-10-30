@@ -4,3 +4,15 @@ C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Word-G
 C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.csprojResolveAssemblyReference.cache
 C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.exe
 C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.pdb
+C:\Users\Venci\Desktop\HackBulgariaProblems\Word-Game\bin\Debug\Word-Game.exe.config
+C:\Users\Venci\Desktop\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.exe
+C:\Users\Venci\Desktop\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.pdb
+C:\Users\Venci\Desktop\HackBulgariaProblems\Word-Game\bin\Debug\Word-Game.exe
+C:\Users\Venci\Desktop\HackBulgariaProblems\Word-Game\bin\Debug\Word-Game.pdb
+C:\Users\Venci\Desktop\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.csprojResolveAssemblyReference.cache
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Word-Game\bin\Debug\Word-Game.exe.config
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.exe
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.pdb
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Word-Game\bin\Debug\Word-Game.exe
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Word-Game\bin\Debug\Word-Game.pdb
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Word-Game\obj\Debug\Word-Game.csprojResolveAssemblyReference.cache
