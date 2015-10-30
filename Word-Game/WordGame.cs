@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Problem 2: Word Game
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

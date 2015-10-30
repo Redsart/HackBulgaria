@@ -4,9 +4,12 @@ C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Points
 C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Points\obj\Debug\Points.csprojResolveAssemblyReference.cache
 C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Points\obj\Debug\Points.exe
 C:\Users\Venci\documents\visual studio 2013\Projects\HackBulgariaProblems\Points\obj\Debug\Points.pdb
+<<<<<<< HEAD
 C:\Users\Venci\Desktop\HackBulgariaProblems\Points\bin\Debug\Points.exe.config
 C:\Users\Venci\Desktop\HackBulgariaProblems\Points\obj\Debug\Points.exe
 C:\Users\Venci\Desktop\HackBulgariaProblems\Points\obj\Debug\Points.pdb
+=======
+>>>>>>> 4bedb53e474e582dc7b01f422be57cae32af1998
 C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Points\bin\Debug\Points.exe.config
 C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Points\obj\Debug\Points.exe
 C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\Points\obj\Debug\Points.pdb
