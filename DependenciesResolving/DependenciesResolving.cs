@@ -11,19 +11,24 @@ namespace DependenciesResolving
     {
         static void Main(string[] args)
         {
-            //StreamReader reader = new StreamReader(@"..\..\dependencies.json");
-
-            //using (reader)
-            //{
-            //    string textLine = reader.ReadLine();
-            //    while (textLine != null)
-            //    {
-            //        textLine = reader.ReadLine();
-            //    }
-            //}
             string path = @"..\..\dependencies.json";
-            string content = File.ReadAllText(path);
-            Console.WriteLine(content);
+            string first = File.ReadAllText(path); // parsing JSON to String
+            //Console.WriteLine(first);
+
+            string secondPath = @"..\..\all_packages.json";
+            string second = File.ReadAllText(secondPath);
+            //Console.WriteLine(second);
+
+            var firstDict = first.Split(new[] { '(', ')' }, StringSplitOptions.RemoveEmptyEntries)
+                        .Select(v => v.Split('='))
+                        .ToDictionary(v => v.First(), v => v.Last());
+
+            var secondDict = second.Split(new[] { '(', ')' }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(v => v.Split('='))
+            .ToDictionary(v => v.First(), v => v.Last());
+
+            Console.WriteLine(firstDict);
+            Console.WriteLine(secondDict);
         }
     }
 }
