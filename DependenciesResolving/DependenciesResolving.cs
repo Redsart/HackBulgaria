@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Web.Script;
+using System.Web.Script.Serialization;
 
 namespace DependenciesResolving
 {
@@ -19,16 +21,10 @@ namespace DependenciesResolving
             string second = File.ReadAllText(secondPath);
             //Console.WriteLine(second);
 
-            var firstDict = first.Split(new[] { '(', ')' }, StringSplitOptions.RemoveEmptyEntries)
-                        .Select(v => v.Split('='))
-                        .ToDictionary(v => v.First(), v => v.Last());
+            var serializer = new JavaScriptSerializer(); //using System.Web.Script.Serialization;
 
-            var secondDict = second.Split(new[] { '(', ')' }, StringSplitOptions.RemoveEmptyEntries)
-            .Select(v => v.Split('='))
-            .ToDictionary(v => v.First(), v => v.Last());
-
-            Console.WriteLine(firstDict);
-            Console.WriteLine(secondDict);
+            Dictionary<string, string> values = serializer.Deserialize<Dictionary<string, string>>(second);
+            Console.WriteLine(values);
         }
     }
 }
