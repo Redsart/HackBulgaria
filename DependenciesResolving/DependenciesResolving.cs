@@ -21,10 +21,37 @@ namespace DependenciesResolving
             string second = File.ReadAllText(secondPath);
             //Console.WriteLine(second);
 
-            var serializer = new JavaScriptSerializer(); //using System.Web.Script.Serialization;
+            var serializeFirst = new JavaScriptSerializer();
+            Package dependencies = serializeFirst.Deserialize<Package>(first);
 
-            Dictionary<string, string> values = serializer.Deserialize<Dictionary<string, string>>(second);
-            Console.WriteLine(values);
+            var serializeSecond = new JavaScriptSerializer();
+
+            Dictionary<string, string[]> packages = serializeSecond.Deserialize<Dictionary<string, string[]>>(second);
+            List<string> instaledPackages = new List<string>();
+            for (int i = 0; i < dependencies.dependencies.Length; i++)
+            {
+                Instaling(dependencies.dependencies[i], packages, ref instaledPackages);
+            }
+        }
+
+        private static void Instaling(string packageName, Dictionary<string, string[]> dependencies, ref List<string> instaledPackages)
+        {
+            string[] value;
+            if (instaledPackages.Contains(packageName))
+            {
+                return;
+            }
+
+            if (dependencies.TryGetValue(packageName, out value) && value.Length > 0)
+            {
+                for (int i = 0; i < value.Length; i++)
+                {
+                    Instaling(value[i], dependencies, ref instaledPackages);
+                }
+            }
+
+            instaledPackages.Add(packageName);
+            Console.WriteLine("Instal package {0}", packageName);
         }
     }
 }
