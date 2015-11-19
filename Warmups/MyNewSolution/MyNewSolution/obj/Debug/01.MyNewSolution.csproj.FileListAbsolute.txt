@@ -1,0 +1,3 @@
+C:\Users\Venci\documents\visual studio 2013\Projects\MyNewSolution\MyNewSolution\bin\Debug\MyNewSolution.exe.config
+C:\Users\Venci\documents\visual studio 2013\Projects\MyNewSolution\MyNewSolution\obj\Debug\MyNewSolution.exe
+C:\Users\Venci\documents\visual studio 2013\Projects\MyNewSolution\MyNewSolution\obj\Debug\MyNewSolution.pdb

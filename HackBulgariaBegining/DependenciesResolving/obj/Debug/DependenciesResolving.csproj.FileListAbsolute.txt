@@ -1,0 +1,6 @@
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\DependenciesResolving\bin\Debug\DependenciesResolving.exe.config
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\DependenciesResolving\bin\Debug\DependenciesResolving.exe
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\DependenciesResolving\bin\Debug\DependenciesResolving.pdb
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\DependenciesResolving\obj\Debug\DependenciesResolving.csprojResolveAssemblyReference.cache
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\DependenciesResolving\obj\Debug\DependenciesResolving.exe
+C:\Users\Venci\Desktop\HackBulgaria.git\HackBulgariaProblems\DependenciesResolving\obj\Debug\DependenciesResolving.pdb
